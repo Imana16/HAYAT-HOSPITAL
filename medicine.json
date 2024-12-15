@@ -1,0 +1,63 @@
+[
+    {
+        "category": "Analgesics",
+        "items": [
+            {"name": "Paracetamol", "price": 5, "image": "./Images/medicine/paracetamol.jpg"},
+            {"name": "Ibuprofen", "price": 5, "image": "./Images/medicine/Ibuprofen.jpg"},
+            {"name": "Aspirin", "price": 3, "image": "./Images/medicine/Aspirin.jpg"},
+            {"name": "Diclofenac", "price": 4, "image": "./Images/medicine/Diclofenac.jpg"},
+            {"name": "Naproxen", "price": 4.5, "image": "./Images/medicine/Naproxen.jpg"},
+            {"name": "Ketorolac", "price": 6, "image": "./Images/medicine/Ketorolac.jpg"},
+            {"name": "Tramadol", "price": 7, "image": "../Images/medicine/Tramadol.jpg"},
+            {"name": "Codeine", "price": 8, "image": "./Images/medicine/codeine.jpg"}
+        ]
+    },
+    {
+        "category": "Antidepressants",
+        "items": [
+            {"name": "Fluoxetine", "price": 12, "image": "./Images/medicine/Fluoxetine.jpg"},
+            {"name": "Sertraline", "price": 15, "image": "./Images/medicine/Sertraline.jpg"},
+            {"name": "Citalopram", "price": 14, "image": "./Images/medicine/Citalopram.jpg"},
+            {"name": "Amitriptyline", "price": 10, "image": "./Images/medicine/Amitriptyline.jpg"},
+            {"name": "Venlafaxine", "price": 18, "image": "./Images/medicine/Venlafaxine.jpg"},
+            {"name": "Mirtazapine", "price": 16, "image": "./Images/medicine/Mirtazapine.jpg"},
+            {"name": "Duloxetine", "price": 20, "image": "./Images/medicine/Duloxetine.jpg"}
+        ]
+    },
+    {
+        "category": "Antihistamines",
+        "items": [
+            {"name": "Cetirizine", "price": 6, "image": "./Images/medicine/Cetirizine.jpg"},
+            {"name": "Loratadine", "price": 7, "image": "./Images/medicine/Loratadine.jpg"},
+            {"name": "Fexofenadine", "price": 8, "image": "./Images/medicine/Fexofenadine.jpg"},
+            {"name": "Diphenhydramine", "price": 5, "image": "./Images/medicine/Diphenhydramine.jpg"},
+            {"name": "Chlorpheniramine", "price": 4.5, "image": "./Images/medicine/Chlorpheniramine.jpg"},
+            {"name": "Levocetirizine", "price": 6.5, "image": "./Images/medicine/Levocetirizine.jpg"},
+            {"name": "Desloratadine", "price": 7.5, "image": "./Images/medicine/Desloratadine.jpg"}
+        ]
+    },
+    {
+        "category": "Antihypertensives",
+        "items": [
+            {"name": "Amlodipine", "price": 8, "image": "./Images/medicine/Amlodipine.jpg"},
+            {"name": "Lisinopril", "price": 9, "image": "./Images/medicine/Lisinopril.jpg"},
+            {"name": "Losartan", "price": 10, "image": "./Images/medicine/Losartan.jpg"},
+            {"name": "Hydrochlorothiazide", "price": 7.5, "image": "./Images/medicine/Hydrochlorothiazide.jpg"},
+            {"name": "Metoprolol", "price": 12, "image": "./Images/medicine/Metoprolol.jpg"},
+            {"name": "Carvedilol", "price": 11, "image": "./Images/medicine/Carvedilol.jpg"},
+            {"name": "Bisoprolol", "price": 10.5, "image": "./Images/medicine/Bisoprolol.jpg"}
+        ]
+    },
+    {
+        "category": "Antibiotics",
+        "items": [
+            {"name": "Amoxicillin", "price": 5, "image": "./Images/medicine/Amoxicillin.jpg"},
+            {"name": "Ciprofloxacin", "price": 7, "image": "./Images/medicine/Ciprofloxacin.jpg"},
+            {"name": "Azithromycin", "price": 9, "image": "./Images/medicine/Azithromycin.jpg"},
+            {"name": "Doxycycline", "price": 8.5, "image": "./Images/medicine/Doxycycline.jpg"},
+            {"name": "Cephalexin", "price": 6.5, "image": "./Images/medicine/Cephalexin.jpg"},
+            {"name": "Clindamycin", "price": 8, "image": "./Images/medicine/Clindamycin.jpg"},
+            {"name": "Levofloxacin", "price": 9.5, "image": "./Images/medicine/Levofloxacin.jpg"}
+        ]
+    }
+]

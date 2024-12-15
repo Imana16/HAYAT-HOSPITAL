@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayat Hospital : Best Private Hospital in Turkey  </title>
+    <link rel="stylesheet" href="./medicine.css"> 
+   <script src="hayathospital.js"></script>
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+     <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+     <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+     <script src="./script.js" defer></script>
+     <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+     
+</head>
+<body>
+   
+<header>
+    <div id="top-bar">
+        <ul>
+            <li><a href="./contactus.html"> Contact Us</a></li>
+            <li><a href="./patientreview.html">Patient Reviews</a></li>
+        </ul>
+        <div id="contact-info">
+            <span><i class="phone-alt"></i>📞 1343</span>
+            <span><i class="envelope"></i> 📧 contactus@hayat.com</span>
+              
+        </div>
+    </div>
+</header>
+    <header id="header">
+        <div id="logo">
+            <img src="Icons/hayaticonlogo.png" alt="Hayat Hospital Logo">
+        </div>
+        <nav id="nav">
+            <div id="icons-section">
+                <div class="icon-item">
+                    <a href="./consultation.html">
+                        <img src="Icons/consultationlogo.png" alt="Book Appointments">
+                        <p>Book Appointments</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./medicalemergency.html">
+                        <img src="Icons/Medicalemergencylogo.png" alt="Medical Emergency Logo">
+                        <p>Medical Emergencies</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="./motherandbabycare.html">
+                        <img src="Images/png/Motherandbabycare.png" alt="Mother And Baby Care">
+                        <p>Mother And Baby Care</p>
+                    </a>
+                </div>
+                <div class="icon-item">
+                    <a href="">
+                        <img src="Icons/healthpakages.png" alt="Health Packages">
+                        <p>Health Packages</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header>
+    <nav>
+    <div id="main-navbar">
+        <span id="menu-toggle">☰</span>
+        <ul id="nav-list">
+            <li><a href="./index.html"> Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./doctors.html">Medical Specialists</a></li>
+            
+            <li class="dropdown">
+                <a href="./service.html" id="services-toggle">Explore Facilities & Services ▼</a>
+                
+                <ul id="services-dropdown">
+                    <li><a href="./service.html">General Services</a></li>
+                    <li><a href="./motherandbabycare.html">Mother and Babycare</a></li>
+                    <li><a href="./healthandwellness.html">Health And Wellness</a></li>
+                    <li><a href="./healthandcare.html">Health and Care</a></li>
+                </ul>
+            </li>
+            <li><a href="./medicine.html">Pharmacy</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+            
+        </ul>
+    </div>
+</nav>
+</header>
+
+    <h1>Checkout</h1>
+
+    <div id="checkout-container">
+        <!-- Left Column -->
+        <div id="left-column">
+            <!-- Personal Details Form -->
+            <div class="form-section">
+                <h3>Personal Details</h3>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Delivery Details Form -->
+            <div class="form-section">
+                <h3>Delivery Details</h3>
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" placeholder="Enter your delivery address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" placeholder="Enter your city" required>
+
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" placeholder="Enter your postal code" required>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div id="right-column">
+            <!-- Cart Summary Section -->
+            <div id="cart-summary">
+                <h3>Cart Summary</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price (LKR)</th>
+                            <th>Quantity</th>
+                            <th>Total (LKR)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-summary">
+                        <!-- Dynamically loaded cart items -->
+                    </tbody>
+                </table>
+                <p>Grand Total: LKR <span id="grand-total">0.00</span></p>
+            </div>
+
+            <!-- Payment Information Form -->
+            <div class="form-section">
+                <h3>Payment Information</h3>
+                <label for="credit-card">Credit Card Number:</label>
+                <input type="text" id="credit-card" placeholder="Enter your credit card number" required>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="month" id="expiry-date" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="Enter your CVV" required>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pay Button Container -->
+    <div id="pay-button-container">
+        <button id="pay-button">Pay Now</button>
+    </div>
+
+    <div id="confirmation-popup" class="hidden">
+            <div class="popup-content">
+                <p id="confirmation-message"></p>
+                <a href="./medicine.html" id="return-button" > Return to Pharmacy</button>
+            </div>
+    </div>
+
+
+
+<div class="overlay hidden" id="popup-overlay"></div>
+
+    <script src="./medicine.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div id="container">
+            <div id="footer-content">
+                <!-- About Section -->
+                <div id="about-section">
+                    <img src="Icons/hayaticonlogo.png" alt="Hayat Hospital Logo" id="footer-logo">
+                    <p id="footersectionabout-p">Hayat Super Specialty Hospital offers a wide range of medical services all under one roof.</p>
+                    <p id="footer-contact">
+                        <span id="footer-phone-icon">📞</span> +91 80110 03111
+                    </p>
+                    <a href="./consultation.html" id="appointment-button">Request An Appointment ➜</a>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div id="links-section">
+                    <h3 id="quicklinks-footer">Quick Links</h3>
+                    <ul id="ul-footer">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                        <li><a href="./service.html">General Services</a></li>
+                        <li><a href="./doctors.html">Find a Doctor</a></li>
+                        <li><a href="./contactus.html">Contact Us</a></li>
+                        <li><a href="./medicine.html">Pharmacy</a></li>
+                        <li><a href="./patientregistration.html">Register Now</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Follow Us Section -->
+                <div id="follow-us-section">
+                    <h3>Like & Follow Us</h3>
+                    <div id="social-media">
+                        <div>
+                            <img src="Icons/facebookicon.png" alt="Facebook Page">
+                            <p>Facebook</p>
+                        </div>
+                        <div>
+                            <img src="Icons/instagramicon.png" alt="Instagram Page">
+                            <p>Instagram</p>
+                        </div>
+                        <div>
+                            <img src="Icons/linkedinlogo.png" alt="LinkedIn Page">
+                            <p>LinkedIn</p>
+                        </div>
+                        <div>
+                            <img src="Icons/twittericon.png" alt="Twitter Page">
+                            <p>Twitter</p>
+                        </div>
+                        <div>
+                            <img src="Icons/whatsapplogo.png" alt="WhatsApp Page">
+                            <p>WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Contact Us Section -->
+                <div id="contact-us-section">
+                    <h3 id="contactus-h3">Contact Us</h3>
+                    <address>
+                        Kahilipara Road, Odalbakra,<br>
+                        Lalganesh Guwahati, Assam 781034
+                    </address>
+                    <p>📞 +91 80110 03111</p>
+                    <p>📧 customercare@hayathospital.in</p>
+                    <p>📧 info@hayathospital.com</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            &copy; 2024 Hayat Super Specialty Hospital. All rights reserved.
+        </div>
+    </footer>
+    
+    </body>
+    </html>
+    

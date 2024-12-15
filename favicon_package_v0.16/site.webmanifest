@@ -1,0 +1,35 @@
+{
+    "name": "Hayat Hospital",
+    "short_name": "Hayat",
+    "description": "A hospital providing exceptional medical services and patient care.",
+    "start_url": "/CB014174/index.html",
+    "display": "standalone",
+    "background_color": "#ADD8E6",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/CB014174/favicon_package_v0.16/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "/CB014174/favicon_package_v0.16/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/CB014174/favicon_package_v0.16/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/CB014174/favicon_package_v0.16/safari-pinned-tab.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ],
+    "orientation": "portrait-primary",
+    "scope": "/CB014174/",
+    "prefer_related_applications": false
+  }
+  

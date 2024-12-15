@@ -1,0 +1,948 @@
+#top-bar {
+    width: 100%;
+    background-color: #2C5364;
+    color:#FFFFFF;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    flex-wrap: wrap; /* Allows wrapping if necessary on smaller screens */
+}
+
+#top-bar ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping of items on smaller screens */
+}
+
+#top-bar ul li {
+    font-size: 14px;
+    margin-right: 0px;
+    padding-left: 10px;
+    align-items: center;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+#top-bar ul li a {
+    color:#FFFFFF;
+    align-items: center;
+}
+
+#contact-info {
+    display: flex;
+    align-items: center;
+}
+
+#contact-info span {
+    padding-right: 10px;
+    margin-right: 0px;
+    align-items: center;
+}
+/* Media query for tablet screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    #top-bar {
+        font-size: 14px; /* Slightly reduce font size */
+        padding: 5px;
+    }
+
+    #top-bar ul {
+        justify-content: space-between; /* Maintain horizontal alignment */
+    }
+
+    #top-bar ul li {
+        padding-left: 5px;
+        margin-right: 5px;
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    #contact-info {
+        justify-content: space-between;
+        white-space: nowrap; /* Keep items on one line */
+    }
+
+    #contact-info span {
+        padding-right: 5px;
+    }
+}
+
+/* Media query for mobile screens (up to 480px) */
+@media screen and (max-width: 480px) {
+    #top-bar {
+        font-size: 13px; /* Further reduce font size */
+    }
+
+    #top-bar ul li {
+        padding-left: 5px;
+        margin-right: 5px;
+        font-size: 13px; /* Adjust font size */
+    }
+
+    #contact-info span {
+        padding-right: 5px;
+    }
+}
+/*------------------------------------------------ ----Header Styles ------------------------------------------------------------------*/
+#header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 170px; 
+}
+
+#nav {
+    display: flex;
+}
+
+#icons-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f4f4f4; 
+}
+
+.icon-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.icon-item img {
+    width: 100px; 
+    height: 100px;
+}
+
+.icon-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #2C5364; 
+}
+/* Media query for tablet screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    #icons-section {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center the items */
+    }
+
+    .icon-item {
+        width: 100%; /* Ensure each icon takes full width */
+        margin: 10px 0; /* Add vertical spacing */
+        margin-left: 20px;
+    }
+}
+
+/* Media query for mobile screens (up to 480px) */
+@media screen and (max-width: 480px) {
+    #icons-section {
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center;
+    }
+
+    .icon-item {
+        width: 100%; /* Make icons take the entire width */
+        margin: 15px 0; /* Increase vertical spacing */
+    }
+
+    .icon-item img {
+        width: 80px; /* Reduce the size of the icons for mobile */
+        height: 80px;
+    }
+
+    .icon-item p {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+}
+
+/*---------------------------------- Main Navbar Styles----------------------------------------------------------------- */
+/* Main Navbar Styles */
+#main-navbar {
+    background-color:  #2C5364;
+    margin-bottom: 10px;
+    position: sticky; /* Makes the navbar stick */
+    top: 0; /* Sticks the navbar to the top */
+    width: 100%; /* Ensure full width */
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Toggle Menu Button */
+#menu-toggle {
+    display: none;
+    font-size: 34px;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1001; /* Ensure it's on top of other elements */
+}
+
+/* Navigation List */
+#nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation List Items */
+#nav-list li {
+    margin-right: 20px;
+    position: relative;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Dropdown Menu */
+#services-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #2C5364;
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+}
+
+#services-dropdown li {
+    margin-bottom: 10px;
+}
+
+#services-dropdown li a:hover {
+    color:#AEE8F0;
+}
+
+/* Media Query for Mobile and Tablet Screens */
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block; /* Show toggle button */
+    }
+
+    #nav-list {
+        display: none; /* Initially hide the menu on small screens */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #2C5364; /* Same background as navbar */
+    }
+
+    #nav-list li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #nav-list.show {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    #services-dropdown {
+        position: relative; /* Position dropdown relative to the menu on mobile */
+    }
+}
+
+/* Optional Hover Effect for Larger Screens */
+#nav-list li:hover > #services-dropdown {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Header Section */
+#pharmacy-heading {
+    position: relative;
+    background-image: url('Images/pharmcaybackground\ image.jpg');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+#pharmacy-main-heading {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#pharmacy-main-parahraph {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.actions {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color:#2C5364;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color:#2C5364;
+    transform: scale(1.05);
+}
+
+a.button {
+    text-decoration: none;
+    background-color: #677688;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a.button:hover {
+    background-color: #677688;
+    transform: scale(1.05);
+}
+
+/* Medicine Categories */
+.category {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.category-heading {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #2C5364;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.medicine-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.medicine-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.medicine-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.medicine-item img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.medicine-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.medicine-item p {
+    font-size: 1em;
+    color: #2C5364;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button.add-to-cart-btn {
+    background:#2C5364;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    transition:  0.3s;
+}
+
+button.add-to-cart-btn:hover {
+    background: #2C5364;
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgb(254, 254, 254);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #25252784;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background:#2C5364;
+    color: rgb(9, 56, 89);
+    font-size: 16px;
+}
+
+button.remove-item {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+button.remove-item:hover {
+    background-color: #c0392b;
+}
+
+/* Grand Total */
+p {
+    font-size: 18px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+#grand-total {
+    color:#2C5364;
+}
+
+
+
+
+/* Container Layout */
+#checkout-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left Column */
+#left-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Right Column */
+#right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Form Sections */
+.form-section {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Cart Summary */
+#cart-summary {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#cart-summary h3 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#grand-total {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Pay Button */
+#pay-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#pay-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pay-button:hover {
+    background-color: #218c54;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#confirmation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+#confirmation-popup button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#confirmation-popup button:hover {
+    background-color: #218c54;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #pharmacy-heading {
+        height: 250px;
+        text-align: center;
+    }
+
+    #pharmacy-main-heading {
+        font-size: 32px;
+    }
+
+    #pharmacy-main-parahraph {
+        font-size: 16px;
+    }
+
+    button, a.button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .medicine-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medicine-item {
+        width: 90%;
+    }
+
+    table, th, td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #checkout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #left-column, #right-column {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .medicine-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .medicine-item {
+        width: 45%;
+    }
+
+    #checkout-container {
+        gap: 15px;
+    }
+
+    #left-column, #right-column {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 575px) {
+    table, th, td {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    #grand-total {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #confirmation-popup {
+        width: 90%;
+    }
+
+    .popup-content p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------Footer container -----------------------------------------------------------------------------*/
+#footer {
+    
+    background-color: #2C5364;
+    padding: 30px 0; /* Decreased padding */
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+    position: relative; /* For positioning the copyright */
+}
+
+/* Container within the footer */
+#container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Content inside the footer */
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Sections inside the footer */
+#about-section, #links-section, #follow-us-section, #contact-us-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Adjusted min-width */
+}
+
+/* About section image */
+#about-section img {
+    max-width: 100px; /* Adjusted max-width */
+    max-height: 80px; /* Adjusted max-height */
+    margin-bottom: 0;
+    display: block;
+}
+
+/* About section text */
+#footersectionabout-p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Footer contact text */
+#footer-contact {
+    font-size: 15px;
+    margin-bottom: 15px; /* Adjusted margin-bottom */
+    color: #ecf0f1;
+}
+
+/* Appointment button */
+#appointment-button {
+    display: inline-block;
+    background-color: grey;
+    color: #fff;
+    padding: 10px 20px; /* Adjusted padding */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for appointment button */
+#appointment-button:hover {
+    background-color: rgba(17, 17, 34, 0.959);
+}
+
+/* Quick links and contact section heading */
+#quicklinks-footer, #contactus-h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+}
+
+/* Footer links */
+#ul-footer {
+    list-style: none;
+    padding: 0;
+}
+
+#ul-footer li {
+    margin-bottom: 8px;
+}
+
+#ul-footer li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+#ul-footer li a:hover {
+    text-decoration: underline;
+}
+
+/* Follow Us section */
+#follow-us-section {
+    color: white;
+}
+
+/* Social media icons and text */
+#social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjusts the alignment on desktop */
+    gap: 10px; /* Space between icons */
+}
+
+#social-media div {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and label */
+}
+
+#social-media img {
+    max-width: 40px;
+    height: auto;
+    margin-top: 0; /* Remove top margin */
+}
+
+#social-media p {
+    font-size: 14px;
+    color: #ecf0f1;
+}
+
+/* Address styling */
+address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+/* Contact section text */
+#contact-us-section p {
+    color: white;
+    font-size: 14px;
+}
+
+#footer-contact span {
+    margin-right: 8px;
+}
+
+/* Footer copyright */
+#footer-copyright {
+    text-align: center;
+    padding: 10px 0; /* Added padding */
+    font-size: 12px; /* Smaller font size */
+    color: #ecf0f1;
+    border-top: 1px solid #ddd; /* Separator line */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-section img {
+        align-items: center;
+    }
+
+    #about-section, #links-section, #follow-us-section, #contact-us-section {
+        margin: 20px 0;
+    }
+
+    #appointment-button {
+        margin: 10px auto;
+    }
+    
+    address {
+        text-align: center;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+   #social-media {
+    align-items: center; /* Center-align icons and labels in mobile view */
+}
+
+#social-media div {
+    justify-content: center; /* Center the content in each row */
+    width: 100%; /* Ensure full width for better centering */
+}
+
+}
