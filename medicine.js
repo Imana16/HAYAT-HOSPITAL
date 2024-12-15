@@ -69,12 +69,14 @@ function displayMedicines(data) {
             medicineItemDiv.classList.add('medicine-item');
 
             medicineItemDiv.innerHTML = `
-                <img src="${item.image}" alt="${item.name}" class="medicine-image">
-                <p class="medicine-name">${item.name}</p>
-                <p class="medicine-price">LKR ${item.price}</p>
-                <input type="number" min="1" value="1" id="${item.name}-qty" class="medicine-quantity">
-                <button class="add-to-cart-btn" data-name="${item.name}" data-price="${item.price}" data-id="${item.name}-qty">Add to Cart</button>
-            `;
+    <img src="${item.image}" alt="${item.name}" class="medicine-image">
+    <p class="medicine-name">${item.name}</p>
+    <p class="medicine-price">LKR ${item.price}</p>
+    <label for="${item.name}-qty">Quantity for ${item.name}:</label>
+    <input type="number" min="1" value="1" id="${item.name}-qty" class="medicine-quantity">
+    <button class="add-to-cart-btn" data-name="${item.name}" data-price="${item.price}" data-id="${item.name}-qty">Add to Cart</button>
+`;
+
 
             const addToCartButton = medicineItemDiv.querySelector('.add-to-cart-btn');
             if (addToCartButton) {
